@@ -437,3 +437,43 @@ img {
     color: var(--para-color);
     line-height: 29px;
 }
+.why-choose-section-main-wrapper{
+    background-image: url("../image/choose-section-bg.png");
+    background-repeat: no-repeat;
+    padding: 70px 0;
+}
+.why-choose-section-main-wrapper .content-wrapper h1{
+    font-size: 46px;
+    line-height: 48px;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin-bottom: 16px;
+}
+.why-choose-section-main-wrapper .content-wrapper .small-title{
+    font-size: 34px;
+    line-height: 32px;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+.why-choose-section-main-wrapper .content-wrapper p.y-title{
+    font-size: 22px;
+    color: var(--secondary-yelllow);
+    margin-bottom: 20px;
+}
+.why-choose-section-main-wrapper .content-wrapper p.des{
+    font-size: 16px;
+    color: var(--para-color);
+    margin-bottom: 25px;
+}
+.why-choose-section-main-wrapper .content-wrapper .body-btn .book-now-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-choose-section-main-wrapper .thumbnil-wrapper .image img{
+    position: absolute;
+    right: -70px;
+    top: -165px;
+    transform: scale(1.2);
+}
+
