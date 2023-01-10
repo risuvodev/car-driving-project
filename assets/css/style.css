@@ -476,4 +476,43 @@ img {
     top: -165px;
     transform: scale(1.2);
 }
+.car-booking-step-wrapper.driving-section-wrapper .driving-ex-item{
+    padding: 30px;
+    min-height: 500px;
+    margin-bottom: 30px;
+}
+.car-booking-step-wrapper.driving-section-wrapper .driving-ex-item.item-1{
+    background-image: url("../image/d-ex-item-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.car-booking-step-wrapper.driving-section-wrapper .driving-ex-item.item-2{
+    background-image: url("../image/d-ex-item-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.car-booking-step-wrapper.driving-section-wrapper .driving-ex-item.item-3{
+    background-image: url("../image/d-ex-item-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.car-booking-step-wrapper.driving-section-wrapper .driving-ex-item.item-4{
+    background-image: url("../image/d-ex-item-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.car-booking-step-wrapper.driving-section-wrapper .driving-ex-item .icon{
+    margin-bottom: 30px;
+}
+.car-booking-step-wrapper.driving-section-wrapper .driving-ex-item h1{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.car-booking-step-wrapper.driving-section-wrapper .driving-ex-item .des{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.025em;
+    color: #4F5562;
+}
 
