@@ -677,4 +677,121 @@ img {
     margin-bottom: 20px;
     text-align: center;
 }
+/*driving lessions*/
+.header-wrapper.header-three{
+    width: 100%;
+    height: 825px;
+}
+.header-wrapper.header-three .hero-section-wrapper{
+    width: 100%;
+    background-image: url("../image/hero-bg-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    align-items: center;
+}
+.header-wrapper.header-three .hero-section-wrapper{
+    justify-content: start;
+}
+.header-wrapper.header-three .hero-section-wrapper h1{
+    color: var(--secondary-yelllow);
+    font-weight: bold;
+    font-size: 140px;
+    text-transform: uppercase;
+    line-height: 154px;
+}
+.booking-section-main-wrapper{
+    margin: 60px 0;
+    padding-left:214px ;
+}
+.booking-section-main-wrapper .section-title{
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 75px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.booking-section-main-wrapper .content-wrapper{
+    width: 100%;
+    height: 730px;
+    display: flex;
+}
+.booking-section-main-wrapper .content-wrapper .img{
+    width:405px;
+    height: 100%;
+}
+.booking-section-main-wrapper .content-wrapper .main-content{
+    width: 925px;
+    height: 100%;
+    background: #1A4661;
+    padding-left:50px ;
+    padding-top: 60px;
+    padding-right: 40px;
+}
+.booking-section-main-wrapper .content-wrapper .img img{
+    width: 100%;
+    height: 100%;
+}
+.booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn{
+    display: flex;
+    gap: 55px;
+    align-items: center;
+    border-bottom: 1px solid #335A72;
+    margin-bottom: 33px;
+}
+.booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
+    font-size: 28px;
+    color: var(--secondary-yelllow);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 36px;
+}
+.booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li::before{
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url("../image/booking-step.png");
+}
+.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul{
+    padding-bottom: 44px;
+    border-bottom: 1px solid #335A72;
+    margin-bottom: 33px;
+}
+.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li::before{
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-image: url("../image/fill-arrow-ico.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard.booking-confidence ul{
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom:0;
+}
 
+.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard.booking-confidence ul li::before{
+    background-image: url("../image/fill-arrow-ico-2.png");
+    width: 23px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
