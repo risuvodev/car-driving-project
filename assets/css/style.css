@@ -1,66 +1,34 @@
 @font-face {
-    font-family: 'Gilroy-Bold ☞';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gilroy-Bold ☞'), url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-family: Gilroy-eBold;
+    src: url("../fonts/Gilroy-ExtraBold.otf") format("opentype");
 }
-
-
 @font-face {
-    font-family: 'Gilroy-Heavy ☞';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gilroy-Heavy ☞'), url('../fonts/Gilroy-Heavy.woff') format('woff');
+    font-family: Gilroy-light;
+    src: url("../fonts/Gilroy-Light.otf") format("opentype");
 }
-
-
 @font-face {
-    font-family: 'Gilroy-Light ☞';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gilroy-Light ☞'), url('../fonts/Gilroy-Light.woff') format('woff');
+    font-family: Product-sans-bold;
+    src: url("../fonts/Product-Sans-Bold.ttf")
+    format("opentype");
 }
-
-
 @font-face {
-    font-family: 'Gilroy-Medium ☞';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gilroy-Medium ☞'), url('../fonts/Gilroy-Medium.woff') format('woff');
+    font-family: Product-sans-bold-italic;
+    src: url("../fonts/Product-Sans-Bold-Italic.ttf")
+    format("opentype");
 }
-
-
 @font-face {
-    font-family: 'Gilroy-Regular ☞';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gilroy-Regular ☞'), url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-family: Product-sans-italic;
+    src: url("../fonts/Product-Sans-Italic.ttf")
+    format("opentype");
 }
-/* Regular Weight */
 @font-face {
-    font-family: "Product Sans";
-    src: url("../fonts/Product Sans Regular.ttf");
-}
-
-/* Bold Weight */
-@font-face {
-    font-family: "Product Sans";
-    src: url("../fonts/Product Sans Bold.ttf");
-}
-
-/* Bold italic Weight */
-@font-face {
-    font-family: "Product Sans";
-    src: url("../fonts/Product Sans Italic.ttf");
-}
-/* regular Weight */
-@font-face {
-    font-family: "Product Sans";
-    src: url("../fonts/Product Sans Regular.ttf");
+    font-family: Product-sans-regular;
+    src: url("../fonts/Product-Sans-Regular.ttf")
+    format("opentype");
 }
 /*default*/
 :root{
-    --primary-blue:#0A0951;
+    --primary-blue:#17214D;
     --secondary-yelllow:#F4A640;
     --para-color:#555185
 }
@@ -71,7 +39,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Product Sans', serif;
+    font-family: 'Product-sans-regular', serif;
     font-weight:normal;
 }
 
@@ -102,7 +70,7 @@ h4,
 h5,
 h6 {
     color: var(--primary-blue);
-    font-family: 'Gilroy-Bold ☞', serif;
+    font-family: 'Gilroy-eBold', serif;
 }
 p{
     margin: 0;
@@ -142,7 +110,7 @@ img {
 }
 .btn-yellow {
     background: var(--secondary-yelllow);
-    font-family: 'Gilroy-Bold ☞', serif;
+    font-family: 'Gilroy-eBold', serif;
     font-size: 16px;
     font-weight: 800;
     border-radius: 6px;
@@ -212,6 +180,7 @@ img {
 .header-wrapper .nav-wrapper :is(.first-nav-wrapper .fnav-items-wrapper .nav-item, .second-nav-wapper .snav-items-wrapper .nav-item){
     padding: 20px 20px;
     font-size: 18px;
+    font-family: "Product-sans-bold", serif;
     font-weight: 700;
     color: white;
     text-transform: capitalize;
@@ -268,14 +237,14 @@ img {
 }
 .search-wrapper .tab-btn-wrap .tab-btn{
     width: 50%;
-    font-family: 'Gilroy-Light ☞', serif;
+    font-family: 'Gilroy-eBold', serif;
     font-size: 16px;
     background: var(--secondary-yelllow);
     opacity: 0.54;
     color: var(--primary-blue);
 }
 .search-wrapper .tab-btn-wrap .tab-btn.active{
-    font-family: 'Gilroy-bold ☞', serif;
+    font-family: 'Gilroy-eBold', serif;
     opacity: 100;
 }
 .search-wrapper .search-bar{
