@@ -513,7 +513,7 @@ img {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    gap: 80px;
     height: 100%;
 }
 .footer-main-wrapper{
@@ -645,6 +645,7 @@ img {
     color: var(--secondary-yelllow);
     font-weight: bolder;
     line-height: 58px;
+    font-family: "Gilroy-eBold", serif;
 }
 .package-include-wrapper-main .package-wapper p span{
     font-size: 36px;
@@ -660,7 +661,11 @@ img {
     display: flex;
     gap: 13px;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
+    transition: transform 180ms ease-in-out;
+}
+.package-include-wrapper-main .package-wapper ul li:hover{
+    transform: scale(1.04);
 }
 .package-include-wrapper-main .package-wapper ul li .title{
     font-size: 22px;
@@ -672,6 +677,10 @@ img {
     background-size: cover;
     width: 100%;
     min-height: 440px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 40px;
 }
 .car-booking-step-wrapper .step-wrapper .step-item.step-item-2.item-1{
     background-image: url("../image/gradient-bg-4.png");
