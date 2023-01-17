@@ -5,3 +5,81 @@ $(document).ready(function() {
         $(this).addClass("active");
     });
 });
+
+function typeWriter(
+    selector_target,
+    text_list,
+    placeholder = false,
+    i = 0,
+    text_list_i = 0,
+    delay_ms = 130
+) {
+    if (!i) {
+        if (placeholder) {
+            Array.from(document.querySelectorAll(selector_target)).forEach(
+                (element) => (element.placeholder = "")
+            );
+            // document.querySelectorAll(selector_target).placeholder = "";
+        } else {
+            Array.from(document.querySelectorAll(selector_target)).forEach(
+                (element) => (element.innerHTML = "")
+            );
+            // document.querySelectorAll(selector_target).innerHTML = "";
+        }
+    }
+    txt = text_list[text_list_i];
+    if (i < txt.length) {
+        if (placeholder) {
+            // document.querySelectorAll(selector_target).placeholder +=
+            //   txt.charAt(i);
+
+            Array.from(document.querySelectorAll(selector_target)).forEach(
+                (element) => (element.placeholder += txt.charAt(i))
+            );
+        } else {
+            // document.querySelectorAll(selector_target).innerHTML +=
+            //   txt.charAt(i);
+
+            Array.from(document.querySelectorAll(selector_target)).forEach(
+                (element) => (element.innerHTML += txt.charAt(i))
+            );
+        }
+        i++;
+        setTimeout(
+            typeWriter,
+            delay_ms,
+            selector_target,
+            text_list,
+            placeholder,
+            i,
+            text_list_i
+        );
+    } else {
+        text_list_i++;
+        if (typeof text_list[text_list_i] === "undefined") {
+            setTimeout(
+                typeWriter,
+                delay_ms * 5,
+                selector_target,
+                text_list,
+                placeholder
+            );
+        } else {
+            i = 0;
+            setTimeout(
+                typeWriter,
+                delay_ms * 3,
+                selector_target,
+                text_list,
+                placeholder,
+                i,
+                text_list_i
+            );
+        }
+    }
+}
+
+text_list = ["Enter your suburb...", " "];
+
+return_value = typeWriter("#suburb-input", text_list, true);
+
