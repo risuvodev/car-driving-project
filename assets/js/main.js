@@ -83,3 +83,33 @@ text_list = ["Enter your suburb...", " "];
 
 return_value = typeWriter("#suburb-input", text_list, true);
 
+function choosePkg(packageType) {
+    if (packageType === "driving only") {
+        document
+            .querySelector(".choose_packages")
+            .children[0].classList.add("choose_packages-click-green");
+
+        document
+            .querySelector(".choose_packages")
+            .children[1].classList.remove("choose_packages-click-blue");
+
+        document.querySelector(".choosed-container").classList.remove("d-none");
+        document.querySelector(".choose-2").classList.add("d-none");
+        document.querySelector(".choose-1").classList.remove("d-none");
+    }
+    if (packageType === "driving test") {
+        document
+            .querySelector(".choose_packages")
+            .children[1].classList.add("choose_packages-click-blue");
+
+        document
+            .querySelector(".choose_packages")
+            .children[0].classList.remove("choose_packages-click-green");
+
+        document.querySelector(".choosed-container").classList.remove("d-none");
+        document.querySelector(".choose-2").classList.remove("d-none");
+        document.querySelector(".choose-1").classList.add("d-none");
+    }
+}
+
+

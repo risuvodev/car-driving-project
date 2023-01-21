@@ -130,29 +130,109 @@
                 </div>
                 <div class="container-x">
                     <div class="row">
-                        <div data-aos="fade-right" class="col-md-6">
-                            <div class="col-md-12 step-wrapper">
-                                <div class="step-item step-item-2 item-1">
-
-                                    <div class="item-content">
-                                        <h1>Driving Test Only</h1>
-
+                        <div class="choose_packages">
+                            <div data-aos="fade-right" class="col-md-6">
+                                <div   tabindex="1" class="col-md-12 step-wrapper">
+                                    <div onclick="choosePkg('driving only')" class="step-item step-item-2 item-1">
+                                        <div class="item-content">
+                                            <h1>Driving Test Only</h1>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div data-aos="fade-left" class="col-md-6">
-                            <div class="col-md-12 step-wrapper">
-                                <div class="step-item step-item-2 item-2">
-
-                                    <div class="item-content">
-                                        <h1>Driving Test with lessons</h1>
-
+                            <div data-aos="fade-left" class="col-md-6">
+                                <div   tabindex="2" class="col-md-12 step-wrapper">
+                                    <div onclick="choosePkg('driving test')" class="step-item step-item-2 item-2">
+                                        <div class="item-content">
+                                            <h1>Driving Test with lessons</h1>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="choosed-container d-none">
+                        <div class="choose-1">
+                            <div class="test-only">
+                                <h5>Find Driving Instructor</h5>
+
+                                <div class="desk-search mx-auto">
+                                    <div class="search-wrapper search-for-tab">
+                                        <div class="tab-btn-wrap">
+                                            <button type="button" class="tab-btn active">Auto</button>
+                                            <button type="button" class="tab-btn">Manual</button>
+                                        </div>
+                                        <div class="search-bar">
+                                            <input id="suburb-input" type="text" class="search-input"/>
+                                            <button type="button" class="search-btn d-none">
+                                                <svg width="33" height="31" viewBox="0 0 33 31" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.7927 26.4C22.1657 26.4 28.1427 20.7587 28.1427 13.8C28.1427 6.84116 22.1657 1.19995 14.7927 1.19995C7.41969 1.19995 1.44269 6.84116 1.44269 13.8C1.44269 20.7587 7.41969 26.4 14.7927 26.4Z"
+                                                          stroke="#17214D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M31.9571 30L24.3285 22.8" stroke="#17214D" stroke-width="2"
+                                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6>Choose Test Location</h6>
+                                        <div class="select-area_container">
+                                            <select class="select-area" name="cars" id="cars">
+                                                <option value="volvo">Volvo</option>
+                                                <option value="saab">Saab</option>
+                                                <option value="opel">Opel</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                            <button>
+                                                <svg width="28" height="30" viewBox="0 0 33 31" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.7927 26.4C22.1657 26.4 28.1427 20.7587 28.1427 13.8C28.1427 6.84116 22.1657 1.19995 14.7927 1.19995C7.41969 1.19995 1.44269 6.84116 1.44269 13.8C1.44269 20.7587 7.41969 26.4 14.7927 26.4Z"
+                                                          stroke="#17214D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M31.9571 30L24.3285 22.8" stroke="#17214D" stroke-width="2"
+                                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Select 'any test location' from the dropdown if your driving test
+                                    has not been booked yet.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="choose-2">
+                            <div class="test-with_lesson">
+                                <h5>Find Driving Instructor</h5>
+                                <div class="desk-search mx-auto">
+                                    <div class="search-wrapper search-for-tab">
+                                        <div class="tab-btn-wrap">
+                                            <button type="button" class="tab-btn active">Auto</button>
+                                            <button type="button" class="tab-btn">Manual</button>
+                                        </div>
+                                        <div class="search-bar">
+                                            <input id="suburb-input" type="text" class="search-input"/>
+                                            <button type="button" class="search-btn">
+                                                <svg width="33" height="31" viewBox="0 0 33 31" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.7927 26.4C22.1657 26.4 28.1427 20.7587 28.1427 13.8C28.1427 6.84116 22.1657 1.19995 14.7927 1.19995C7.41969 1.19995 1.44269 6.84116 1.44269 13.8C1.44269 20.7587 7.41969 26.4 14.7927 26.4Z"
+                                                          stroke="#17214D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M31.9571 30L24.3285 22.8" stroke="#17214D" stroke-width="2"
+                                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
