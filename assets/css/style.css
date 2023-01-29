@@ -203,6 +203,7 @@ img {
     align-items: center;
     padding: 0 214px;
     position: relative;
+    z-index: 20;
 }
 .header-wrapper .nav-wrapper .logo{
     position: absolute;
@@ -1942,7 +1943,7 @@ select {
     }
     .header-wrapper .hero-section-wrapper .content-wrapper {
         margin-top: 98px;
-        margin-right: 50px;
+        margin-right: -35px;
     }
     .nav-wrapper-main .mobile-nav-wrapper .book-now-btn-drawer{
         margin-right: 20px;
