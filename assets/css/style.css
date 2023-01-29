@@ -1439,8 +1439,28 @@ select {
     width: 600px;
     height: auto;
 }
+.header-wrapper.header-three .nav-wrapper-main{
+    z-index: 10;
+}
 /* TODO: ===============RESPONSIVE */
 @media (max-width: 1440px) {
+    .save-section-main-wrapper .content-wrapper{
+        height: 800px;
+    }
+    .save-section-main-wrapper .content-wrapper .img{
+        max-width: 75%;
+    }
+    .booking-section-main-wrapper .content-wrapper {
+        padding-left: 55px;
+    }
+    .header-wrapper.header-three .nav-wrapper .logo{
+        left: calc(50% - 100px);
+        width: 200px;
+        height: 80px;
+    }
+    .header-wrapper.header-three{
+        height: 630px;
+    }
     .header-wrapper.header-two{
         height: 555px;
     }
@@ -1462,7 +1482,60 @@ select {
         transform: scale(1);
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
+    .driving-lesson-main-wrapper{
+        height: auto;
+        padding:60px 0;
+    }
+    .driving-lesson-main-wrapper .img{
+        max-width: 500px;
+        max-height: 264px;
+        margin-top: 20px;
+    }
+    .save-section-main-wrapper .content-wrapper {
+        height: 550px;
+    }
+    .booking-section-main-wrapper .section-title{
+        font-size: 32px;
+    }
+    .booking-section-main-wrapper .content-wrapper {
+        height: 470px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content{
+        width: 620px;
+    }
+    .booking-section-main-wrapper .content-wrapper .img{
+        width: 260px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content{
+        padding-left: 30px;
+        padding-top: 25px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn{
+        gap: 20px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul{
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
+        font-size: 20px;
+        padding-bottom: 15px;
+    }.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
+    font-size: 14px;
+         }
+
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .header-wrapper.header-three .hero-section-wrapper h1{
+        font-size: 80px;
+        line-height: 82px;
+    }
+    .header-wrapper.header-three{
+        height: 450px;
+    }
     .car-booking-step-wrapper.choose-section-wrapper .step-item.step-item-2 .item-content h1{
         font-size: 30px;
     }
@@ -1684,6 +1757,52 @@ select {
 
 }
 @media (max-width: 768px) {
+    .driving-lesson-wrapper .search-wrapper .search-bar .search-btn {
+        width: 50px;
+        height: 46px;
+        top: 2px;
+        right: 2px;
+    }
+    .save-section-main-wrapper .section-title{
+        margin-bottom: 0;
+    }
+    .save-section-main-wrapper .content-wrapper {
+        height: 400px;
+    }
+    .save-section-main-wrapper .section-title{
+        font-size: 28px;
+    }
+    .header-wrapper.header-three{
+        height: 380px;
+    }
+    .header-wrapper.header-three .hero-section-wrapper h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li::before{
+        width: 12px;
+        height: 12px;
+        background-size: contain;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
+        font-size: 11px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content{
+        padding-left: 16px;
+        padding-top: 14px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
+        font-size: 14px;
+    }
+    .booking-section-main-wrapper .content-wrapper .img{
+        width: 200px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content{
+        width: 445px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
+        font-size: 16px;
+    }
     .package-include-wrapper-main .package-wapper p{
         font-size: 26px;
         line-height: 32px;
@@ -1830,9 +1949,6 @@ select {
         height: 30px;
         top: 4px;
     }
-    .header-wrapper .hero-section-wrapper{
-        padding: 0;
-    }
     .nav-wrapper-main .mobile-nav-wrapper {
         top: 9px;
     }
@@ -1842,6 +1958,58 @@ select {
 
 }
 @media (max-width: 425px) {
+    .save-section-main-wrapper .content-wrapper {
+        height: 200px;
+    }
+    .booking-section-main-wrapper{
+        margin: 0;
+    }
+    .booking-section-main-wrapper .section-title{
+        margin-bottom: 0;
+    }
+    .header-wrapper.header-three .hero-section-wrapper {
+        padding: 0 20px;
+    }
+    .header-wrapper.header-three .hero-section-wrapper h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .header-wrapper.header-three{
+        height: 212px;
+    }
+    .booking-section-main-wrapper .content-wrapper{
+        height: 415px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn{
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+        margin-bottom: 10px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
+        margin-bottom: 5px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
+        margin-bottom: 5px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
+        padding-bottom: 0;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li:last-child{
+        padding-bottom: 5px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content{
+        width: 240px;
+    }
+    .booking-section-main-wrapper .content-wrapper .img{
+        width: 150px;
+    }
+    .booking-section-main-wrapper .content-wrapper{
+        padding-left: 20px;
+    }
+    .booking-section-main-wrapper .section-title{
+        font-size: 20px;
+    }
     .footer-main-wrapper{
         padding-top: 50px;
     }
