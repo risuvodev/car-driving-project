@@ -43,6 +43,9 @@ body{
     font-weight:normal;
     overflow-x: hidden;
 }
+html{
+    overflow-x: hidden;
+}
 
 ul {
     list-style: none;
