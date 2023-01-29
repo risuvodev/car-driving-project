@@ -1435,8 +1435,15 @@ select {
 .nav-wrapper-main .mobile-nav-wrapper{
     display: none;
 }
+.car-booking-step-wrapper.choose-section-wrapper .step-wrapper{
+    width: 600px;
+    height: auto;
+}
 /* TODO: ===============RESPONSIVE */
 @media (max-width: 1440px) {
+    .header-wrapper.header-two{
+        height: 555px;
+    }
     .why-choose-section-main-wrapper .thumbnil-wrapper .image img{
         position: unset;
         transform: scale(1);
@@ -1456,6 +1463,43 @@ select {
     }
 }
 @media (max-width: 1024px) {
+    .car-booking-step-wrapper.choose-section-wrapper .step-item.step-item-2 .item-content h1{
+        font-size: 30px;
+    }
+    .car-booking-step-wrapper.choose-section-wrapper .step-wrapper .step-item{
+        min-height: 337px !important;
+    }
+    .car-booking-step-wrapper.choose-section-wrapper .step-wrapper{
+        width: 453px;
+
+    }
+    .package-include-wrapper-main{
+        padding: 0 60px;
+        margin-top: 50px;
+    }
+    .package-include-wrapper-main .package-wapper{
+        padding-top: 40px;
+        padding-left: 70px;
+    }
+    .package-include-wrapper-main .package-wapper p{
+        font-size: 52px;
+    }
+    .package-include-wrapper-main .package-wapper h2{
+        font-size: 37px;
+        margin-bottom: 17px;
+    }
+    .package-include-wrapper-main .package-wapper ul li{
+        margin-bottom: 8px;
+    }
+    .package-include-wrapper-main .package-wapper ul li .title{
+        font-size: 18px;
+    }
+    .package-include-wrapper-main .package-wapper{
+        height: 347px;
+    }
+    .header-wrapper.header-two{
+        height: 390px;
+    }
     .client-section-main-wrapper .client-items{
         gap: 30px;
         justify-content: center;
@@ -1640,6 +1684,41 @@ select {
 
 }
 @media (max-width: 768px) {
+    .package-include-wrapper-main .package-wapper p{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .package-include-wrapper-main .package-wapper p span{
+        font-size: 14px;
+    }
+    .package-include-wrapper-main .package-wapper h2{
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    .package-include-wrapper-main{
+        padding: 0 25px;
+    }
+    .package-include-wrapper-main .package-wapper {
+        height: 175px;
+    }
+    .package-include-wrapper-main .package-wapper {
+        padding-top: 5px;
+        padding-left: 30px;
+    }
+    .package-include-wrapper-main .package-wapper ul li .icon svg{
+        width: 10px;
+        height: 10px;
+
+    }
+    .package-include-wrapper-main .package-wapper ul li{
+        margin-bottom: 0;
+    }
+    .package-include-wrapper-main .package-wapper ul li .title{
+        font-size: 10px;
+    }
+    .header-wrapper.header-two{
+        height: 150px;
+    }
     .car-booking-step-wrapper.driving-section-wrapper .driving-ex-item h1{
         font-size: 21px;
     }
@@ -1763,6 +1842,30 @@ select {
 
 }
 @media (max-width: 425px) {
+    .footer-main-wrapper{
+        padding-top: 50px;
+    }
+    .package-include-wrapper-main{
+        margin-top:20px ;
+    }
+    .car-booking-step-wrapper.choose-section-wrapper .section-title{
+        margin-bottom: 0;
+    }
+    .car-booking-step-wrapper.choose-section-wrapper{
+        padding: 30px 0;
+    }
+    .car-booking-step-wrapper.choose-section-wrapper .step-wrapper{
+        width: 296px;
+    }
+    .car-booking-step-wrapper.choose-section-wrapper .step-wrapper .step-item{
+             background-size: contain !important;
+        min-height: 221px !important;
+        padding-bottom: 0 !important;
+         }
+
+    .car-booking-step-wrapper.choose-section-wrapper .step-item.step-item-2 .item-content h1{
+        font-size: 20px;
+    }
     .footer-main-wrapper .footer-col .footer-grid .footer-grid-item h2{
         text-align: center;
     }

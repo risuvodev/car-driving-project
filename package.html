@@ -13,6 +13,7 @@
 <body>
 <header>
     <div class="header-wrapper header-two">
+        <img class="hero-img" src="./assets/image/hero-bg-2.png" alt="hero">
         <div class="nav-wrapper-main">
             <div class="nav-wrapper">
                 <div class="first-nav-wrapper">
@@ -36,15 +37,33 @@
                         </ul>
                     </nav>
                     <div>
-                        <button type="button" class="btn-yellow book-now-btn">
+                        <a href="#"  class="btn-yellow book-now-btn">
                             Book now
-                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-nav-wrapper">
+                <!--                logo-->
+                <div class="logo">
+                    <img src="./assets/image/logo.png" alt="logo">
+                </div>
+                <div class="book-now-btn-drawer">
+                    <div>
+                        <a href="#"  class="btn-yellow book-now-btn book-now-btn-lg">
+                            Book now
+                        </a>
+                    </div>
+                    <div class="drawer-btn">
+                        <span>
+                            <svg width="38" height="23" viewBox="0 0 38 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.25 22.2955H37.75V18.697H0.25V22.2955ZM0.25 13.2993H37.75V9.7008H0.25V13.2993ZM0.25 0.70459V4.30307H37.75V0.70459H0.25Z" fill="white"/>
+</svg>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
-        <!--            hero bg-->
-        <div class="hero-section-wrapper"></div>
     </div>
 </header>
 <main>
@@ -128,29 +147,29 @@
                         <h1>Choose one of the packages:</h1>
                     </div>
                 </div>
-                <div class="container-x">
-                    <div class="row">
-                        <div class="choose_packages">
-                            <div data-aos="fade-right" class="col-md-6">
-                                <div   tabindex="1" class="col-md-12 step-wrapper">
-                                    <div onclick="choosePkg('driving only')" class="step-item step-item-2 item-1">
-                                        <div class="item-content">
-                                            <h1>Driving Test Only</h1>
-                                        </div>
-                                    </div>
+                <div class="main-content-wrapper">
+                    <div class="choose_packages">
+                        <div data-aos="fade-right"   tabindex="1" class="step-wrapper">
+                            <div onclick="choosePkg('driving only')" class="step-item step-item-2 item-1">
+                                <div class="item-content">
+                                    <h1>Driving Test Only</h1>
                                 </div>
                             </div>
-                            <div data-aos="fade-left" class="col-md-6">
-                                <div   tabindex="2" class="col-md-12 step-wrapper">
-                                    <div onclick="choosePkg('driving test')" class="step-item step-item-2 item-2">
-                                        <div class="item-content">
-                                            <h1>Driving Test with lessons</h1>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div data-aos="fade-left"  tabindex="2" class=" step-wrapper">
+                            <div onclick="choosePkg('driving test')" class="step-item step-item-2 item-2">
+                                <div class="item-content">
+                                    <h1>Driving Test with lessons</h1>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+            </div>
+                <div class="container-x">
+                    <div class="row">
+
                     <div class="choosed-container d-none">
                         <div class="choose-1">
                             <div class="test-only">
