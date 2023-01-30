@@ -541,6 +541,7 @@ img {
 }
 .car-booking-step-wrapper.driving-section-wrapper .driving-ex-item .icon{
     margin-bottom: 30px;
+    height: 80px;
 }
 .car-booking-step-wrapper.driving-section-wrapper .driving-ex-item h1{
     font-size: 26px;
@@ -1427,7 +1428,8 @@ select {
     background-size:cover;
 }
 .driving-lesson-main-wrapper .section-title{
-    margin-bottom: 16px;
+    margin-bottom: 25px;
+    font-size: 46px;
 }
 .driving-lesson-main-wrapper .img img{
     object-fit: contain;
@@ -1761,6 +1763,9 @@ select {
 
 }
 @media (max-width: 768px) {
+    .driving-lesson-main-wrapper .section-title{
+        font-size: 28px;
+    }
     .driving-lesson-wrapper .search-wrapper .search-bar .search-btn {
         width: 50px;
         height: 46px;
@@ -1962,6 +1967,12 @@ select {
 
 }
 @media (max-width: 425px) {
+    .client-section-main-wrapper .client-items{
+        gap: 20px;
+    }
+    .client-section-main-wrapper .client-items .client-item{
+        transform: scale(0.7);
+    }
     .save-section-main-wrapper .content-wrapper {
         height: 200px;
     }
