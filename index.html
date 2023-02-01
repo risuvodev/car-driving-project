@@ -43,26 +43,49 @@
                     </div>
                 </div>
             </div>
-            <div class="mobile-nav-wrapper">
-<!--                logo-->
-                <div class="logo">
-                    <img src="./assets/image/logo.png" alt="logo">
-                </div>
-                <div class="book-now-btn-drawer">
-                    <div>
-                        <a href="#"  class="btn-yellow book-now-btn book-now-btn-lg">
-                            Book now
-                        </a>
-                    </div>
-                    <div class="drawer-btn">
+           <div class="mobile-nav-main-wrapper">
+               <div class="mobile-nav-wrapper">
+                   <!--                logo-->
+                   <div class="logo">
+                       <img src="./assets/image/logo.png" alt="logo">
+                   </div>
+                   <div class="position-relative">
+                       <div class="book-now-btn-drawer">
+                           <div>
+                               <a href="#"  class="btn-yellow book-now-btn book-now-btn-lg">
+                                   Book now
+                               </a>
+                           </div>
+                           <div onclick="drawerToggle()" class="drawer-btn">
                         <span>
                             <svg width="38" height="23" viewBox="0 0 38 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0.25 22.2955H37.75V18.697H0.25V22.2955ZM0.25 13.2993H37.75V9.7008H0.25V13.2993ZM0.25 0.70459V4.30307H37.75V0.70459H0.25Z" fill="white"/>
 </svg>
                         </span>
-                    </div>
-                </div>
-            </div>
+                           </div>
+                       </div>
+                       <div class="navbar-collapse position-relative collapse show" id="myNavbarToggler7" style="">
+                           <ul class="navbar-nav mx-auto header-ul text-nowrap ul-nav">
+                               <li class="nav-item px-2 px-1">
+                                   <a class="header-link link-active" href="#">Home</a>
+                               </li>
+                               <li class="nav-item px-2 px-1">
+                                   <a class="header-link" href="#">Driving Lessons</a>
+                               </li>
+                               <li class="nav-item px-2 px-1">
+                                   <a class="header-link" href="#">Test Packages</a>
+                               </li>
+                               <li class="nav-item px-2 py-1">
+                                   <a class="header-link" href="#">Contact</a>
+                               </li>
+                               <li class="nav-item px-2 px-1">
+                                   <a class="header-link" href="#">Login</a>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
         </div>
         <!--            hero-->
         <div class="hero-section-wrapper">
@@ -74,6 +97,26 @@
                     Where
                     learners become drivers</p>
                 <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="500" class="search-wrapper">
+                    <div class="tab-btn-wrap">
+                        <button type="button" class="tab-btn active">Auto</button>
+                        <button type="button" class="tab-btn">Manual</button>
+                    </div>
+                    <div class="search-bar">
+                        <input id="suburb-input" type="text" class="search-input"/>
+                        <button type="button" class="search-btn">
+                            <svg width="33" height="31" viewBox="0 0 33 31" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.7927 26.4C22.1657 26.4 28.1427 20.7587 28.1427 13.8C28.1427 6.84116 22.1657 1.19995 14.7927 1.19995C7.41969 1.19995 1.44269 6.84116 1.44269 13.8C1.44269 20.7587 7.41969 26.4 14.7927 26.4Z"
+                                      stroke="#17214D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M31.9571 30L24.3285 22.8" stroke="#17214D" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-search">
+                <div class="search-wrapper">
                     <div class="tab-btn-wrap">
                         <button type="button" class="tab-btn active">Auto</button>
                         <button type="button" class="tab-btn">Manual</button>
@@ -260,10 +303,10 @@
     <section>
         <div class="car-driving-test-wrapper">
             <div class="car-driving-test-main-wrapper">
-                <div class="container-x h-100">
-                    <div class="row h-100 align-items-center">
+                <div class="h-100">
+                    <div class="section-wrapper h-100 align-items-center">
                         <!--            thumbnil-->
-                        <div data-aos="fade-right"  data-aos-duration="1000" class="col-xl-6 col-12">
+                        <div data-aos="fade-right"  data-aos-duration="1000">
                             <div class="col-md-12 thumbnil-wrapper position-relative">
                                 <div class="img-wrapper">
                                     <img src="./assets/image/driving-test-thumb.svg" alt="image"/>
@@ -271,8 +314,8 @@
                             </div>
                         </div>
                         <!--            content-->
-                        <div data-aos="fade-left"  data-aos-duration="1000" class="col-xl-6 col-12">
-                            <div class="col-md-12 content-wrapper">
+                        <div data-aos="fade-left"  data-aos-duration="1000">
+                            <div class="content-wrapper">
                                 <div>
                                     <h1>Driving Test Package:</h1>
                                     <ul>
@@ -356,44 +399,40 @@
     <section >
         <div data-aos="fade-up" class="why-choose-section-wrapper">
             <div class="why-choose-section-main-wrapper">
-                <div class="container-x">
-                    <div class="row align-items-center">
-                        <!--                    content area-->
-                        <div data-aos="fade-right" data-aos-delay="100"
-                             data-aos-duration="1000" data-aos-easing="ease-in-sine" class="col-xl-6 col-12">
-                            <div class="col-xl-12 content-wrapper">
-                                <div class="content-width">
-                                    <h1 class="title">Why Choose first pass?</h1>
-                                    <p class="small-title">We make it fast & easy!
-                                    </p>
-                                    <p class="y-title">At First Pass, our priority is YOU!
-                                    </p>
-                                    <p class="des">Finding a quality driving instructor in your area can be a difficult and consuming task, that’s why we have built a comprehensive database of instructors for you to
-                                        choose from. <br> <br>
+                <div class=" section-wrapper align-items-center">
+                    <!--                    content area-->
+                    <div data-aos="fade-right" data-aos-delay="100"
+                         data-aos-duration="1000" data-aos-easing="ease-in-sine" class="d-flex justify-content-center">
+                        <div class=" content-wrapper flex justify-center">
+                            <div class="content-width">
+                                <h1 class="title">Why Choose first pass?</h1>
+                                <p class="small-title">We make it fast & easy!
+                                </p>
+                                <p class="y-title">At First Pass, our priority is YOU!
+                                </p>
+                                <p class="des">Finding a quality driving instructor in your area can be a difficult and consuming task, that’s why we have built a comprehensive database of instructors for you to
+                                    choose from. <br> <br>
 
-                                        Our reliable and trustworthy driving instructors will have you driving in no time. <br><br>
+                                    Our reliable and trustworthy driving instructors will have you driving in no time. <br><br>
 
-                                        First Pass offers the best quality services, with experienced instructors, well-maintained vehicles and flexible payment options to help you pass your test the first time.
-                                    </p>
-                                    <div class="body-btn">
-                                        <a href="#">
-                                            <div class="btn-yellow book-now-btn-small">
+                                    First Pass offers the best quality services, with experienced instructors, well-maintained vehicles and flexible payment options to help you pass your test the first time.
+                                </p>
+                                <div class="body-btn">
+                                    <a href="#">
+                                        <div class="btn-yellow book-now-btn-small">
                                         <span>
                                             Book Now
                                         </span>
-                                            </div>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <!--                    thumbnil-->
-                        <div class="col-xl-6 col-12">
-                            <div class="col-xl-12 thumbnil-wrapper position-relative">
-                                <div class="image">
-                                    <img src="./assets/image/choose-section-thumb.svg" alt="image"/>
-                                </div>
-                            </div>
+                    </div>
+                    <!--                    thumbnil-->
+                    <div class="thumbnil-wrapper position-relative">
+                        <div class="image">
+                            <img src="./assets/image/choose-section-thumb.svg" alt="image"/>
                         </div>
                     </div>
                 </div>

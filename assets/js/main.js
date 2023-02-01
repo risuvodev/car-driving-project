@@ -4,8 +4,12 @@ $(document).ready(function() {
         $(".tab-btn").removeClass("active");
         $(this).addClass("active");
     });
-});
 
+
+});
+function drawerToggle() {
+    $(".ul-nav").toggleClass("active");
+}
 function typeWriter(
     selector_target,
     text_list,
@@ -111,5 +115,6 @@ function choosePkg(packageType) {
         document.querySelector(".choose-1").classList.add("d-none");
     }
 }
+
 
 

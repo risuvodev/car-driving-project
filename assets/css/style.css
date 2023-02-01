@@ -173,6 +173,41 @@ img {
     width: 164px;
     height: 72px;
 }
+.ul-nav {
+    position: absolute;
+    top: 200px;
+    right: 57px;
+    background: rgba(211, 245, 255, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: 0.5s all ease-in-out;
+    padding: 10px;
+    width: 160px;
+    opacity: 0;
+}
+.ul-nav.active{
+    top: 5px;
+    opacity: 100;
+}
+.header-ul > li {
+    margin-bottom: 8px;
+}
+.header-ul > li a{
+    font-size: 12px;
+}
+.header-ul li:hover {
+   background: #17214d;
+    color: white;
+}
+.header-link {
+    margin: 0px;
+    color: #17214d;
+    border-bottom: none;
+    font-size: 17px;
+}
 /*hero*/
 .header-wrapper{
     width: 100%;
@@ -377,13 +412,13 @@ img {
     padding-bottom: 60px;
 }
 .car-booking-step-wrapper .step-wrapper .step-item.item-1{
-    background-image: url("../image/gradient-bg-1.png");
+    background-image: url("../image/gradient-bg-1.svg");
 }
 .car-booking-step-wrapper .step-wrapper .step-item.item-2{
-    background-image: url("../image/gradient-bg-2.png");
+    background-image: url("../image/gradient-bg-2.svg");
 }
 .car-booking-step-wrapper .step-wrapper .step-item.item-3{
-    background-image: url("../image/gradient-bg-3.png");
+    background-image: url("../image/gradient-bg-3.svg");
 }
 .car-booking-step-wrapper .step-item .item-content{
     padding: 0 30px;
@@ -423,15 +458,12 @@ img {
 .car-driving-test-main-wrapper{
     width: 100%;
     height: 850px;
-    background-image:url("../image/driving-test-bg.png") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(270deg, #ffffff 13.15%, #5ac1df 113.15%);
+    padding-left: 110px;
 }
-.car-driving-test-main-wrapper .thumbnil-wrapper .img-wrapper img{
-    position: absolute;
-    left: -150px;
-    top: -230px;
-    transform: scale(1.4);
+.car-driving-test-main-wrapper .section-wrapper{
+    display: flex;
+    gap: 50px;
 }
 .car-driving-test-main-wrapper .content-wrapper .test-pkg-btn{
     width: 250px;
@@ -495,20 +527,34 @@ img {
     text-transform: capitalize;
 }
 .why-choose-section-main-wrapper .content-wrapper p.des{
-    font-size: 17px;
+    font-size: 22px;
     color: var(--para-color);
     margin-bottom: 25px;
 }
+/*.why-choose-section-main-wrapper .image{*/
+/*    width: 602px;*/
+/*    height: 408px;*/
+/*}*/
 .why-choose-section-main-wrapper .content-wrapper .body-btn .book-now-btn{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.why-choose-section-main-wrapper .thumbnil-wrapper .image img{
-    position: absolute;
-    right: -70px;
-    top: -165px;
-    transform: scale(1.2);
+/*.why-choose-section-main-wrapper .thumbnil-wrapper .image img{*/
+/*    position: absolute;*/
+/*    right: -70px;*/
+/*    top: -165px;*/
+/*}*/
+.why-choose-section-main-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.why-choose-section-main-wrapper .section-wrapper{
+    display: flex;
+    gap: 60px;
+}
+.why-choose-section-main-wrapper .section-wrapper .content-wrapper{
+    width: 538px;
 }
 .car-booking-step-wrapper.driving-section-wrapper .section-title p{
     font-size: 24px;
@@ -1448,8 +1494,11 @@ select {
 .header-wrapper.header-three .nav-wrapper-main{
     z-index: 10;
 }
+.hero-section-wrapper .mobile-search{
+    display: none;
+}
 /* TODO: ===============RESPONSIVE */
-@media (max-width: 1440px) {
+@media (max-width: 1580px) {
     .save-section-main-wrapper .content-wrapper{
         height: 800px;
     }
@@ -1470,10 +1519,10 @@ select {
     .header-wrapper.header-two{
         height: 555px;
     }
-    .why-choose-section-main-wrapper .thumbnil-wrapper .image img{
-        position: unset;
-        transform: scale(1);
-    }
+    /*.why-choose-section-main-wrapper .thumbnil-wrapper .image img{*/
+    /*    position: unset;*/
+    /*    transform: scale(1);*/
+    /*}*/
     .header-wrapper .hero-section-wrapper{
         padding: 0 100px;
     }
@@ -1488,7 +1537,7 @@ select {
         transform: scale(1);
     }
 }
-@media (max-width: 1024px){
+@media (max-width: 1368px) {
     .driving-lesson-main-wrapper{
         height: auto;
         padding:60px 0;
@@ -1598,11 +1647,11 @@ select {
         text-align: center;
 
     }
-    .why-choose-section-main-wrapper .thumbnil-wrapper .image img{
-        width: 440px;
-        height: 298px;
-        transform: scale(1);
-    }
+    /*.why-choose-section-main-wrapper .thumbnil-wrapper .image img{*/
+    /*    width: 440px;*/
+    /*    height: 298px;*/
+    /*    transform: scale(1);*/
+    /*}*/
     .why-choose-section-main-wrapper .content-wrapper .body-btn{
         margin-bottom: 50px;
     }
@@ -1694,6 +1743,7 @@ select {
         display: flex;
         justify-content: space-between;
         top: 24px;
+        z-index: 99999;
     }
     .nav-wrapper-main .mobile-nav-wrapper .logo img{
         width: 180px;
@@ -1760,9 +1810,21 @@ select {
     .car-driving-test-main-wrapper .content-wrapper p{
         text-align: center;
     }
+    .car-driving-test-main-wrapper .section-wrapper{
+        display: block;
+        gap: 0;
+    }
+    .why-choose-section-main-wrapper .section-wrapper{
+        display: block;
+        gap: 0;
+    }
 
 }
-@media (max-width: 768px) {
+@media (max-width: 920px) {
+    .ul-nav {
+
+        right: 20px;
+    }
     .driving-lesson-main-wrapper .section-title{
         font-size: 28px;
     }
@@ -1877,14 +1939,14 @@ select {
         font-size: 12px;
         line-height: 18px;
     }
-    .why-choose-section-main-wrapper .thumbnil-wrapper .image img{
-        width: 250px;
-        height: 170px;
-    }
-    .car-driving-test-main-wrapper .thumbnil-wrapper .img-wrapper img{
-        width: 250px;
-        height: 200px;
-    }
+    /*.why-choose-section-main-wrapper .thumbnil-wrapper .image img{*/
+    /*    width: 250px;*/
+    /*    height: 170px;*/
+    /*}*/
+    /*.car-driving-test-main-wrapper .thumbnil-wrapper .img-wrapper img{*/
+    /*    width: 250px;*/
+    /*    height: 200px;*/
+    /*}*/
     .car-driving-test-main-wrapper .content-wrapper h1{
         font-size: 25px;
     }
@@ -1922,23 +1984,22 @@ select {
         top: 0;
         left: calc(50% - 48px);
     }
-    .header-wrapper{
-        height: 230px;
-    }
-    .header-wrapper .hero-section-wrapper .content-wrapper h1{
-        font-size: 24px;
-        line-height: 27px;
+
+
+    .header-wrapper .hero-section-wrapper .content-wrapper h1 {
+        font-size: 34px;
+        line-height: 40px;
     }
     .header-wrapper .hero-section-wrapper .content-wrapper p{
         font-size: 12px;
         line-height: 17px;
     }
-    .header-wrapper .search-wrapper{
+    .header-wrapper .content-wrapper .search-wrapper{
         position: absolute;
         right: 125%;
         bottom: -52px;
     }
-    .header-wrapper .search-wrapper .search-bar{
+    .header-wrapper .content-wrapper .search-wrapper .search-bar{
         border: 1px solid #E7E7E7;
         box-shadow: 0px 25px 63px rgba(0, 0, 0, 0.1);
         height: 40px;
@@ -1964,9 +2025,38 @@ select {
     .search-wrapper .tab-btn-wrap{
         height: 26px;
     }
+    .header-wrapper {
+        height: 380px;
+    }
+    .hero-section-wrapper .content-wrapper .search-wrapper{
+        display: none;
+    }
+    .search-wrapper .search-bar {
+        height: 37px;
+    }
+    .hero-section-wrapper .mobile-search {
+        display: block;
+        position: absolute;
+        left: calc(50% - 146px);
+        bottom: -37px;
+    }
+    .hero-section-wrapper .mobile-search .search-bar{
+        box-shadow: 0px 25px 63px rgb(0 0 0 / 10%);
+    }
+
 
 }
-@media (max-width: 425px) {
+@media (max-width: 550px) {
+    .why-choose-section-wrapper .content-width{
+        width: 100%;
+    }
+    .header-wrapper .hero-section-wrapper .content-wrapper h1{
+        font-size: 24px;
+        line-height: 27px;
+    }
+    .header-wrapper{
+        height: 230px;
+    }
     .client-section-main-wrapper .client-items{
         gap: 20px;
     }
@@ -2066,8 +2156,11 @@ select {
     .client-section-main-wrapper .client-items{
         flex-direction: column;
     }
-    .header-wrapper .search-wrapper{
+    .header-wrapper .content-wrapper .search-wrapper{
         right: calc(25% - 20px);
+    }
+    .why-choose-section-main-wrapper .thumbnil-wrapper .image img{
+        width: 70%;
     }
 }
 
