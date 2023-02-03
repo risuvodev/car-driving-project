@@ -1588,8 +1588,8 @@ select {
         font-size: 80px;
         line-height: 82px;
     }
-    .header-wrapper.header-three{
-        height: 450px;
+    .header-wrapper.header-three {
+        height: 500px;
     }
     .car-booking-step-wrapper.choose-section-wrapper .step-item.step-item-2 .item-content h1{
         font-size: 30px;
@@ -1625,8 +1625,8 @@ select {
     .package-include-wrapper-main .package-wapper{
         height: 347px;
     }
-    .header-wrapper.header-two{
-        height: 390px;
+    .header-wrapper.header-two {
+        height: 460px;
     }
     .client-section-main-wrapper .client-items{
         gap: 30px;
@@ -1676,8 +1676,8 @@ select {
     .why-choose-section-main-wrapper .content-wrapper :is(p.y-title , p.des) {
         font-size: 12px;
     }
-    .header-wrapper{
-        height: 563px;
+    .header-wrapper {
+        height: 680px;
     }
     .header-wrapper .hero-section-wrapper .content-wrapper h1{
         font-size:46px;
@@ -1820,7 +1820,8 @@ select {
     }
 
 }
-@media (max-width: 920px) {
+
+@media (max-width: 916px) {
     .ul-nav {
 
         right: 20px;
@@ -1843,8 +1844,8 @@ select {
     .save-section-main-wrapper .section-title{
         font-size: 28px;
     }
-    .header-wrapper.header-three{
-        height: 380px;
+    .header-wrapper.header-three {
+        height: 320px;
     }
     .header-wrapper.header-three .hero-section-wrapper h1 {
         font-size: 50px;
@@ -1906,9 +1907,10 @@ select {
     .package-include-wrapper-main .package-wapper ul li .title{
         font-size: 10px;
     }
-    .header-wrapper.header-two{
-        height: 150px;
+    .header-wrapper.header-two {
+        height: 325px;
     }
+
     .car-booking-step-wrapper.driving-section-wrapper .driving-ex-item h1{
         font-size: 21px;
     }
@@ -1984,15 +1986,13 @@ select {
         top: 0;
         left: calc(50% - 48px);
     }
-
-
     .header-wrapper .hero-section-wrapper .content-wrapper h1 {
-        font-size: 34px;
-        line-height: 40px;
+        font-size: 49px;
+        line-height: 54px;
     }
-    .header-wrapper .hero-section-wrapper .content-wrapper p{
-        font-size: 12px;
-        line-height: 17px;
+    .header-wrapper .hero-section-wrapper .content-wrapper p {
+        font-size: 17px;
+        line-height: 24px;
     }
     .header-wrapper .content-wrapper .search-wrapper{
         position: absolute;
@@ -2026,7 +2026,7 @@ select {
         height: 26px;
     }
     .header-wrapper {
-        height: 380px;
+        height: 460px;
     }
     .hero-section-wrapper .content-wrapper .search-wrapper{
         display: none;
@@ -2043,20 +2043,32 @@ select {
     .hero-section-wrapper .mobile-search .search-bar{
         box-shadow: 0px 25px 63px rgb(0 0 0 / 10%);
     }
+    .header-wrapper.header-two {
+        height: 295px;
+    }
 
 
 }
-@media (max-width: 550px) {
+
+@media (max-width: 630px) {
+    .header-wrapper.header-two {
+        height: 206px;
+    }
+    .header-wrapper {
+        height: 310px;
+    }
+    .header-wrapper .hero-section-wrapper .content-wrapper p {
+        font-size: 12px;
+        line-height: 14px;
+    }
     .why-choose-section-wrapper .content-width{
         width: 100%;
     }
-    .header-wrapper .hero-section-wrapper .content-wrapper h1{
-        font-size: 24px;
-        line-height: 27px;
+    .header-wrapper .hero-section-wrapper .content-wrapper h1 {
+        font-size: 35px;
+        line-height: 38px;
     }
-    .header-wrapper{
-        height: 230px;
-    }
+
     .client-section-main-wrapper .client-items{
         gap: 20px;
     }
@@ -2079,8 +2091,8 @@ select {
         font-size: 34px;
         line-height: 40px;
     }
-    .header-wrapper.header-three{
-        height: 212px;
+    .header-wrapper.header-three {
+        height: 235px;
     }
     .booking-section-main-wrapper .content-wrapper{
         height: 415px;
@@ -2162,6 +2174,22 @@ select {
     .why-choose-section-main-wrapper .thumbnil-wrapper .image img{
         width: 70%;
     }
+}
+@media (max-width: 440px) {
+    .header-wrapper{
+        height: 230px;
+    }
+    .header-wrapper .hero-section-wrapper .content-wrapper h1{
+        font-size: 24px;
+        line-height: 27px;
+    }
+    .header-wrapper.header-three {
+        height: 190px;
+    }
+    .header-wrapper.header-two{
+        height: 150px;
+    }
+
 }
 
 
