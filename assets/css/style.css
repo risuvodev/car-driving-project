@@ -772,7 +772,7 @@ img {
 }
 .car-booking-step-wrapper.choose-section-wrapper .step-wrapper .step-item.step-item-2{
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     min-height: 440px;
     align-items: center;
@@ -1497,6 +1497,12 @@ select {
 .hero-section-wrapper .mobile-search{
     display: none;
 }
+.mobile-search .search-wrapper .search-bar .search-btn {
+    width: 40px;
+    height: 34px;
+    top: 2px;
+    right: 2px;
+}
 /* TODO: ===============RESPONSIVE */
 @media (max-width: 1580px) {
     .save-section-main-wrapper .content-wrapper{
@@ -1822,6 +1828,12 @@ select {
 }
 
 @media (max-width: 916px) {
+    .car-booking-step-wrapper.choose-section-wrapper .step-item.step-item-2 .item-content h1 {
+        font-size: 17px;
+    }
+    .car-booking-step-wrapper.choose-section-wrapper .step-wrapper .step-item {
+        min-height: 270px !important;
+    }
     .ul-nav {
 
         right: 20px;
@@ -2014,11 +2026,11 @@ select {
     .nav-wrapper-main .mobile-nav-wrapper .book-now-btn-drawer{
         margin-right: 20px;
     }
-    .search-wrapper .search-bar .search-btn{
-        width: 30px;
-        height: 30px;
-        top: 4px;
-    }
+    /*.search-wrapper .search-bar .search-btn{*/
+    /*    width: 30px;*/
+    /*    height: 30px;*/
+    /*    top: 4px;*/
+    /*}*/
     .nav-wrapper-main .mobile-nav-wrapper {
         top: 9px;
     }
@@ -2031,7 +2043,7 @@ select {
     .hero-section-wrapper .content-wrapper .search-wrapper{
         display: none;
     }
-    .search-wrapper .search-bar {
+    .mobile-search .search-wrapper .search-bar {
         height: 37px;
     }
     .hero-section-wrapper .mobile-search {
@@ -2045,6 +2057,9 @@ select {
     }
     .header-wrapper.header-two {
         height: 295px;
+    }
+    .search-wrapper .search-bar {
+        height: 50px;
     }
 
 
@@ -2217,6 +2232,13 @@ select {
     }
     .ul-nav {
         right: 3px;
+    }
+    .header-wrapper.header-three {
+        height: 147px;
+    }
+    .header-wrapper.header-three .hero-section-wrapper h1 {
+        font-size: 20px;
+        line-height: 22px;
     }
 
 }
