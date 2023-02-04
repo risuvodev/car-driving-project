@@ -2189,7 +2189,35 @@ select {
     .header-wrapper.header-two{
         height: 150px;
     }
+    .why-choose-section-main-wrapper .section-wrapper .content-wrapper {
+         width: 100%;
+    }
 
 }
+@media (max-width: 320px) {
+    .header-wrapper .hero-section-wrapper {
+        padding: 0 70px;
+    }
+    .header-wrapper {
+        height: 190px;
+    }
+    .header-wrapper .hero-section-wrapper .content-wrapper h1 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .header-wrapper .hero-section-wrapper .content-wrapper p {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .nav-wrapper-main .mobile-nav-wrapper .book-now-btn-drawer {
+        gap: 5px;
+    }
+    .nav-wrapper-main .mobile-nav-wrapper .book-now-btn-drawer {
+        margin-right: 3px;
+    }
+    .ul-nav {
+        right: 3px;
+    }
 
+}
 
