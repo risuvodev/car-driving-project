@@ -500,8 +500,8 @@ img {
     line-height: 29px;
 }
 .why-choose-section-main-wrapper{
-    background-image: url("../image/choose-section-bg.png");
-    background-repeat: no-repeat;
+    background: linear-gradient(90deg, #ffffff 13.15%, #ffe2b3 113.15%);
+    /*background-repeat: no-repeat;*/
     padding: 70px 0;
 }
 .why-choose-section-main-wrapper .content-wrapper h1{
