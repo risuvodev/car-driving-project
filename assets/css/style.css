@@ -271,6 +271,7 @@ img {
 }
 .header-wrapper .nav-wrapper .second-nav-wapper .book-now-btn{
     margin-left: 30px;
+    text-transform: capitalize;
 }
 .header-wrapper .nav-wrapper .first-nav-wrapper .fnav-items-wrapper .nav-item:first-child{
     padding-left: 0;
@@ -1325,7 +1326,7 @@ select {
 /*driving lessions*/
 .header-wrapper.header-three{
     width: 100%;
-    height: 825px;
+    /*height: 825px;*/
 }
 .header-wrapper.header-three .nav-wrapper .second-nav-wapper .snav-items-wrapper .nav-item{
     color: var(--primary-blue);
@@ -1354,7 +1355,7 @@ select {
 }
 .save-section-main-wrapper .section-title,
 .booking-section-main-wrapper .section-title{
-    font-size: 46px;
+    font-size: clamp(20px, 5vw, 46px);
     font-weight: 800;
     line-height: 75px;
     text-align: center;
@@ -1477,7 +1478,7 @@ select {
 }
 .driving-lesson-main-wrapper .section-title{
     margin-bottom: 25px;
-    font-size: 46px;
+    font-size: clamp(20px, 5vw, 46px);
 }
 .driving-lesson-main-wrapper .img img{
     object-fit: contain;
@@ -1524,9 +1525,9 @@ select {
         width: 200px;
         height: 80px;
     }
-    .header-wrapper.header-three{
-        height: 630px;
-    }
+    /*.header-wrapper.header-three{*/
+    /*    height: 630px;*/
+    /*}*/
     .header-wrapper.header-two{
         height: 555px;
     }
@@ -1550,6 +1551,10 @@ select {
     .search-wrapper .search-bar{
         width: 100%;
     }
+    .driving-lesson-main-wrapper .search-wrapper .search-bar{
+        width: 534px;
+    }
+
 }
 @media (max-width: 1368px) {
 
@@ -1565,9 +1570,9 @@ select {
     /*.save-section-main-wrapper .content-wrapper {*/
     /*    height: 550px;*/
     /*}*/
-    .booking-section-main-wrapper .section-title{
-        font-size: 32px;
-    }
+    /*.booking-section-main-wrapper .section-title{*/
+    /*    font-size: 32px;*/
+    /*}*/
     .booking-section-main-wrapper .content-wrapper {
         height: 470px;
     }
@@ -1603,9 +1608,9 @@ select {
     /*    font-size: 80px;*/
     /*    line-height: 82px;*/
     /*}*/
-    .header-wrapper.header-three {
-        height: 500px;
-    }
+    /*.header-wrapper.header-three {*/
+    /*    height: 500px;*/
+    /*}*/
     .car-booking-step-wrapper.choose-section-wrapper .step-item.step-item-2 .item-content h1{
         font-size: 30px;
     }
@@ -1690,6 +1695,7 @@ select {
     /*}*/
     .why-choose-section-main-wrapper .content-wrapper :is(p.y-title , p.des) {
         font-size: clamp(12px, 3vw, 17px);
+        padding: 0 10px;
     }
     /*.header-wrapper {*/
     /*    height: 680px;*/
@@ -1837,6 +1843,7 @@ select {
 }
 
 @media (max-width: 916px) {
+
     .car-booking-step-wrapper.choose-section-wrapper .step-item.step-item-2 .item-content h1 {
         font-size: 17px;
     }
@@ -1847,9 +1854,9 @@ select {
 
         right: 20px;
     }
-    .driving-lesson-main-wrapper .section-title{
-        font-size: 28px;
-    }
+    /*.driving-lesson-main-wrapper .section-title{*/
+    /*    font-size: 28px;*/
+    /*}*/
     /*.driving-lesson-wrapper .search-wrapper .search-bar .search-btn {*/
     /*    width: 50px;*/
     /*    height: 46px;*/
@@ -1862,12 +1869,12 @@ select {
     /*.save-section-main-wrapper .content-wrapper {*/
     /*    height: 400px;*/
     /*}*/
-    .save-section-main-wrapper .section-title{
-        font-size: 28px;
-    }
-    .header-wrapper.header-three {
-        height: 320px;
-    }
+    /*.save-section-main-wrapper .section-title{*/
+    /*    font-size: 28px;*/
+    /*}*/
+    /*.header-wrapper.header-three {*/
+    /*    height: 320px;*/
+    /*}*/
     /*.header-wrapper.header-three .hero-section-wrapper h1 {*/
     /*    font-size: 50px;*/
     /*    line-height: 60px;*/
@@ -2057,6 +2064,10 @@ select {
 
 }
 @media (max-width: 700px) {
+
+    .nav-wrapper-main .mobile-nav-wrapper {
+        top: 4px;
+    }
     .booking-section-main-wrapper .content-wrapper .main-content {
         width: 410px;
     }
@@ -2071,6 +2082,9 @@ select {
 }
 
 @media (max-width: 630px) {
+    .driving-lesson-main-wrapper .search-wrapper .search-bar{
+        width: 100%;
+    }
     .car-driving-test-main-wrapper .content-wrapper ul li{
         margin-bottom: 12px;
     }
@@ -2085,7 +2099,7 @@ select {
         display: block;
         position: absolute;
         left: clamp(67px, 21vw, 123px);
-        bottom: -35.5px;
+        bottom: -38.5px;
         width: 66%;
     }
     .mobile-search .search-wrapper .search-bar {
@@ -2132,9 +2146,9 @@ select {
     /*    font-size: 34px;*/
     /*    line-height: 40px;*/
     /*}*/
-    .header-wrapper.header-three {
-        height: 235px;
-    }
+    /*.header-wrapper.header-three {*/
+    /*    height: 235px;*/
+    /*}*/
     .booking-section-main-wrapper .content-wrapper{
         height: 415px;
     }
@@ -2163,9 +2177,9 @@ select {
     .booking-section-main-wrapper .content-wrapper{
         padding-left: 20px;
     }
-    .booking-section-main-wrapper .section-title{
-        font-size: 20px;
-    }
+    /*.booking-section-main-wrapper .section-title{*/
+    /*    font-size: 20px;*/
+    /*}*/
     .footer-main-wrapper{
         padding-top: 50px;
     }
@@ -2219,6 +2233,9 @@ select {
     .ul-nav {
         right: 4px;
     }
+    .car-booking-step-wrapper {
+        padding: 70px 10px;
+    }
 }
 @media (max-width: 440px) {
     .booking-section-main-wrapper .content-wrapper{
@@ -2238,9 +2255,9 @@ select {
     /*    font-size: 24px;*/
     /*    line-height: 27px;*/
     /*}*/
-    .header-wrapper.header-three {
-        height: 190px;
-    }
+    /*.header-wrapper.header-three {*/
+    /*    height: 190px;*/
+    /*}*/
     .header-wrapper.header-two{
         height: 150px;
     }
@@ -2272,9 +2289,9 @@ select {
         margin-right: 3px;
     }
 
-    .header-wrapper.header-three {
-        height: 147px;
-    }
+    /*.header-wrapper.header-three {*/
+    /*    height: 147px;*/
+    /*}*/
     /*.header-wrapper.header-three .hero-section-wrapper h1 {*/
     /*    font-size: 20px;*/
     /*    line-height: 22px;*/
