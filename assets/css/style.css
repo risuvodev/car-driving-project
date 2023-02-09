@@ -2089,9 +2089,9 @@ select {
     .header-wrapper .mobile-search {
         display: block;
         position: absolute;
-        left: clamp(67px, 21vw, 123px);
+        left: clamp(60px, 6vw, 123px);
         bottom: -36.5px;
-        width: 66%;
+        width: 76%;
     }
     .mobile-search .search-wrapper .search-bar {
         height: clamp(36px, 5vw, 68px);
