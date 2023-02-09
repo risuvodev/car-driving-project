@@ -1366,14 +1366,14 @@ select {
     width: 100%;
     height: 730px;
     display: flex;
-    padding-left:214px ;
+    justify-content: center;
 }
 .booking-section-main-wrapper .content-wrapper .img{
     width:405px;
     height: 100%;
 }
 .booking-section-main-wrapper .content-wrapper .main-content{
-    width: clamp(240px,55%,925px);
+    width: 888px;
     height: 100%;
     background: #1A4661;
     padding: 60px 40px 50px 50px;
@@ -1381,13 +1381,12 @@ select {
 .booking-section-main-wrapper .content-wrapper .img img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn{
     display: flex;
     align-items: center;
     border-bottom: 1px solid #335A72;
-    margin-bottom: 33px;
-    flex-wrap: wrap;
 }
 .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
     font-size: 28px;
@@ -1396,7 +1395,7 @@ select {
     gap: 10px;
     align-items: center;
     padding-bottom: 36px;
-    margin-right: clamp(0px,6%,50px);
+    margin-right: 52.5px;
 }
 .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li::before{
     content: "";
@@ -1409,7 +1408,8 @@ select {
     font-size: 30px;
     font-weight: bold;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
+    margin-top: 40px;
 }
 .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul{
     padding-bottom: 44px;
@@ -1516,9 +1516,9 @@ select {
     .save-section-main-wrapper .content-wrapper .img{
         max-width: 75%;
     }
-    .booking-section-main-wrapper .content-wrapper {
-        padding-left: 55px;
-    }
+    /*.booking-section-main-wrapper .content-wrapper {*/
+    /*    padding-left: 55px;*/
+    /*}*/
     .header-wrapper.header-three .nav-wrapper .logo{
         left: calc(50% - 100px);
         width: 200px;
@@ -1572,15 +1572,15 @@ select {
     /*.booking-section-main-wrapper .section-title{*/
     /*    font-size: 32px;*/
     /*}*/
-    .booking-section-main-wrapper .content-wrapper {
-        height: 470px;
-    }
+    /*.booking-section-main-wrapper .content-wrapper {*/
+    /*    height: 470px;*/
+    /*}*/
     /*.booking-section-main-wrapper .content-wrapper .main-content{*/
     /*    width: 620px;*/
     /*}*/
-    .booking-section-main-wrapper .content-wrapper .img{
-        width: 260px;
-    }
+    /*.booking-section-main-wrapper .content-wrapper .img{*/
+    /*    width: 260px;*/
+    /*}*/
     .booking-section-main-wrapper .content-wrapper .main-content{
         padding-left: 30px;
         padding-top: 25px;
@@ -1593,16 +1593,17 @@ select {
         margin-bottom: 10px;
     }
     .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
-        font-size: 20px;
+        /*font-size: 20px;*/
         padding-bottom: 15px;
-    }.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
-    font-size: 14px;
-         }
-
-    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
-        font-size: 24px;
-        margin-bottom: 20px;
     }
+    /*.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{*/
+    /*font-size: 14px;*/
+    /*     }*/
+
+    /*.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{*/
+    /*    font-size: 24px;*/
+    /*    margin-bottom: 20px;*/
+    /*}*/
     /*.header-wrapper.header-three .hero-section-wrapper h1{*/
     /*    font-size: 80px;*/
     /*    line-height: 82px;*/
@@ -1883,25 +1884,25 @@ select {
         height: 12px;
         background-size: contain;
     }
-    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
-        font-size: 11px;
-    }
+    /*.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{*/
+    /*    font-size: 11px;*/
+    /*}*/
     .booking-section-main-wrapper .content-wrapper .main-content{
         padding-left: 16px;
         padding-top: 14px;
     }
     .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
-        font-size: 14px;
+        /*font-size: 14px;*/
     }
-    .booking-section-main-wrapper .content-wrapper .img{
-        width: 200px;
-    }
+    /*.booking-section-main-wrapper .content-wrapper .img{*/
+    /*    width: 200px;*/
+    /*}*/
     /*.booking-section-main-wrapper .content-wrapper .main-content{*/
     /*    width: 445px;*/
     /*}*/
-    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
-        font-size: 16px;
-    }
+    /*.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{*/
+    /*    font-size: 16px;*/
+    /*}*/
     .package-include-wrapper-main .package-wapper p{
         font-size: 26px;
         line-height: 32px;
@@ -2156,20 +2157,20 @@ select {
     /*.header-wrapper.header-three {*/
     /*    height: 235px;*/
     /*}*/
-    .booking-section-main-wrapper .content-wrapper{
-        height: 415px;
-    }
+    /*.booking-section-main-wrapper .content-wrapper{*/
+    /*    height: 415px;*/
+    /*}*/
     .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn{
         flex-direction: column;
         align-items: start;
-        margin-bottom: 10px;
+        /*margin-bottom: 10px;*/
     }
     .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
         margin-bottom: 5px;
     }
-    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
-        margin-bottom: 5px;
-    }
+    /*.booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{*/
+    /*    margin-bottom: 5px;*/
+    /*}*/
     .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
         padding-bottom: 0;
     }
@@ -2180,9 +2181,9 @@ select {
     .booking-section-main-wrapper .content-wrapper .img{
         width: 150px;
     }
-    .booking-section-main-wrapper .content-wrapper{
-        padding-left: 20px;
-    }
+    /*.booking-section-main-wrapper .content-wrapper{*/
+    /*    padding-left: 20px;*/
+    /*}*/
     /*.booking-section-main-wrapper .section-title{*/
     /*    font-size: 20px;*/
     /*}*/
@@ -2244,9 +2245,9 @@ select {
     }
 }
 @media (max-width: 440px) {
-    .booking-section-main-wrapper .content-wrapper{
-        padding-left: 0;
-    }
+    /*.booking-section-main-wrapper .content-wrapper{*/
+    /*    padding-left: 0;*/
+    /*}*/
     .header-wrapper.header-two {
         height: 295px;
     }
@@ -2305,4 +2306,184 @@ select {
     /*}*/
 
 }
+/*driving sesson responsive*/
+@media (max-width: 1430px){
+    .booking-section-main-wrapper .content-wrapper .main-content {
+        width: 702px;
 
+    }
+    .booking-section-main-wrapper .content-wrapper{
+        height: 609px;
+    }
+    .booking-section-main-wrapper .content-wrapper .img{
+        width: 340px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
+        font-size: 25px;
+        margin-bottom: 14px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
+        font-size: 19px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li::before {
+        width: 19px;
+        height: 19px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
+        font-size: 22px;
+        margin-right: 22.5px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content {
+        padding: 30px 20px 50px 50px;
+    }
+}
+
+@media (max-width: 1150px){
+    .booking-section-main-wrapper .content-wrapper .main-content {
+        width: 621px;
+    }
+    .booking-section-main-wrapper .content-wrapper{
+        height: 469px;
+    }
+    .booking-section-main-wrapper .content-wrapper .img{
+        width: 259px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
+        font-size: 24px;
+        margin-bottom: 6px;
+        margin-top: 14px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li::before {
+        width: 18px;
+        height: 18px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
+        font-size: 20px;
+        margin-right: 23px;
+    }
+}
+@media (max-width: 940px){
+    .booking-section-main-wrapper .content-wrapper .main-content {
+        width: 445px;
+    }
+    .booking-section-main-wrapper .content-wrapper{
+        height: 358px;
+    }
+    .booking-section-main-wrapper .content-wrapper .img{
+        width: 200px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
+        font-size: 16px;
+        margin-bottom: 5px;
+        margin-top: 13px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
+        font-size: 12.5px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
+        font-size: 14px;
+        margin-right: 14px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li::before {
+        width: 12.5px;
+        height: 12.5px;
+    }
+    /*.booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn{*/
+    /*    flex-wrap: wrap;*/
+    /*}*/
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard.booking-confidence ul li::before{
+        width: 14px;
+        height: 14px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content{
+        padding: 17px 20px 30px 15px;
+    }
+}
+@media (max-width: 715px){
+    .booking-section-main-wrapper .content-wrapper .main-content {
+        width: 332px;
+    }
+    .booking-section-main-wrapper .content-wrapper{
+        height: 289.54px;
+    }
+    .booking-section-main-wrapper .content-wrapper .img{
+        width: 150px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
+        font-size: 13px;
+        margin-bottom: 2px;
+        margin-top: 13px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
+        font-size: 9.5px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li::before {
+        width: 9.5px;
+        height: 9.5px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
+        font-size: 11px;
+        margin-right: 8px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard.booking-confidence ul li::before{
+        width: 10px;
+        height: 10px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li::before{
+        width: 8px;
+        height: 8px;
+    }
+}
+@media (max-width: 520px){
+    .booking-section-main-wrapper .content-wrapper .main-content {
+        width: 240px;
+    }
+    .booking-section-main-wrapper .content-wrapper{
+        height: 415.54px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
+        font-size: 15px;
+        margin-bottom: 2px;
+        margin-top: 13px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
+        font-size: 12px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li::before {
+        width: 12px;
+        height: 12px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content ul.tab-btn li{
+        font-size: 12px;
+        margin-right: 0px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard.booking-confidence ul li::before{
+        width: 22px;
+        height: 22px;
+    }
+}
+@media (max-width: 400px){
+    .booking-section-main-wrapper .content-wrapper .main-content {
+        width: 174px;
+
+    }
+    .booking-section-main-wrapper .content-wrapper{
+        height: 387.54px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard h2{
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard.booking-confidence ul li::before{
+        width: 25px;
+        height: 25px;
+    }
+    .booking-section-main-wrapper .content-wrapper .main-content .online-dashboard ul li{
+        font-size: 10px;
+    }
+}
