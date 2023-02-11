@@ -38,6 +38,7 @@ body {
     font-family: "Product-sans-regular", serif;
     font-weight: normal;
     overflow-x: hidden;
+    background: #FFFDF8;
 }
 html {
     overflow-x: hidden;
@@ -309,7 +310,7 @@ img {
 }
 .header-wrapper .hero-section-wrapper .content-wrapper p {
     font-weight: 400;
-    font-size: clamp(7px, 2.3vw, 24px);
+    font-size: clamp(12px, 2.3vw, 24px);
     line-height: clamp(10px, 3vw, 45px);
     color: var(--primary-blue);
     margin-bottom: 20px;
@@ -421,7 +422,7 @@ img {
     background-image: url("../image/gradient-bg-3.svg");
 }
 .car-booking-step-wrapper .step-item .item-content {
-    padding: 0 30px;
+    padding-left: clamp(10px,2vw,30px);
 }
 .car-booking-step-wrapper .step-item .item-content h1 {
     font-weight: 800 !important;
@@ -451,9 +452,9 @@ img {
     fill: currentColor;
 }
 .car-booking-step-wrapper .step-item .item-content ul li p {
-    font-size: 18px;
+    font-size:  clamp(14px,1vw,18px);
     color: var(--para-color);
-    line-height: 40px;
+    line-height: clamp(10px,3vw,40px);;
 }
 .car-driving-test-main-wrapper {
     width: 100%;
@@ -491,7 +492,7 @@ img {
 .car-driving-test-main-wrapper .content-wrapper ul li .icon {
 }
 .car-driving-test-main-wrapper .content-wrapper ul li .title {
-    font-size: clamp(12px, 3vw, 22px);
+    font-size: clamp(14px, 3vw, 22px);
     display: inline-block;
     color: var(--primary-blue);
 }
@@ -499,7 +500,7 @@ img {
     margin-bottom: 12px;
 }
 .car-driving-test-main-wrapper .content-wrapper p {
-    font-size: 16px;
+    font-size: 17px;
     color: var(--para-color);
     line-height: 29px;
 }
@@ -1691,7 +1692,7 @@ select {
     /*    font-size: 21px;*/
     /*}*/
     .why-choose-section-main-wrapper .content-wrapper :is(p.y-title, p.des) {
-        font-size: clamp(12px, 3vw, 17px);
+        font-size: clamp(14px, 3vw, 17px);
         padding: 0 10px;
     }
     /*.header-wrapper {*/
@@ -1719,7 +1720,7 @@ select {
         margin-bottom: 16px;
     }
     .car-booking-step-wrapper .step-item .item-content ul li p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 0;
     }
 
@@ -1922,7 +1923,7 @@ select {
         margin-bottom: 0;
     }
     .package-include-wrapper-main .package-wapper ul li .title {
-        font-size: 10px;
+        font-size: 12px;
     }
     .header-wrapper.header-two {
         height: 325px;
@@ -1955,8 +1956,8 @@ select {
     /*    margin-bottom: 10px;*/
     /*}*/
     .car-booking-step-wrapper .section-title p {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 16px;
     }
     /*.why-choose-section-main-wrapper .thumbnil-wrapper .image img{*/
     /*    width: 250px;*/
@@ -1973,7 +1974,7 @@ select {
     /*    font-size: 12px;*/
     /*}*/
     .car-driving-test-main-wrapper .content-wrapper p {
-        font-size: 10px;
+        font-size: 11px;
         line-height: 14px;
     }
     .car-driving-test-main-wrapper .content-wrapper ul {
