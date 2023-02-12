@@ -310,7 +310,7 @@ img {
 }
 .header-wrapper .hero-section-wrapper .content-wrapper p {
     font-weight: 400;
-    font-size: clamp(12px, 2.3vw, 24px);
+    font-size: clamp(10px, 2.3vw, 24px);
     line-height: clamp(10px, 3vw, 45px);
     color: var(--primary-blue);
     margin-bottom: 20px;
@@ -399,8 +399,8 @@ img {
 }
 .car-booking-step-wrapper .section-title p {
     text-align: center;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: clamp(10px,2vw,18px);
+    line-height: clamp(12px,2vw,22px);
     color: var(--para-color);
 }
 .car-booking-step-wrapper .step-wrapper .step-item {
@@ -559,7 +559,8 @@ img {
     width: 538px;
 }
 .car-booking-step-wrapper.driving-section-wrapper .section-title p {
-    font-size: 24px;
+    font-size: clamp(10px,2vw,18px);
+    line-height: clamp(12px,2vw,22px);
     color: var(--para-color);
 }
 .car-booking-step-wrapper.driving-section-wrapper .driving-ex-item {
@@ -1948,17 +1949,17 @@ select {
     .car-booking-step-wrapper .section-title {
         margin-bottom: 16px;
     }
-    .car-booking-step-wrapper.driving-section-wrapper .section-title p {
-        font-size: 14px;
-    }
+    /*.car-booking-step-wrapper.driving-section-wrapper .section-title p {*/
+    /*    font-size: 14px;*/
+    /*}*/
     /*.car-booking-step-wrapper .section-title h1{*/
     /*    font-size: 21px;*/
     /*    margin-bottom: 10px;*/
     /*}*/
-    .car-booking-step-wrapper .section-title p {
-        font-size: 14px;
-        line-height: 16px;
-    }
+    /*.car-booking-step-wrapper .section-title p {*/
+    /*    font-size: 14px;*/
+    /*    line-height: 16px;*/
+    /*}*/
     /*.why-choose-section-main-wrapper .thumbnil-wrapper .image img{*/
     /*    width: 250px;*/
     /*    height: 170px;*/
